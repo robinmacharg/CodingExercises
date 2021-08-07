@@ -1,0 +1,2 @@
+# CodingExercises
+Collected coding exercises
