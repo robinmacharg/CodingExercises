@@ -1,0 +1,4 @@
+1 /bin/run_me_daily
+45 * /bin/run_me_hourly
+a * /bin/run_me_every_minute
+* 19 /bin/run_me_sixty_times

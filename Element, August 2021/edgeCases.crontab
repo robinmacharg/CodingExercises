@@ -1,0 +1,15 @@
+0 0 fixed1
+
+1 0 fixed2
+59 23 fixed 3
+
+* * wildcard
+
+0 * wildcard hour 1
+59 * wildcard hour 2
+27 * wildcard hour 3
+01            * wildcard hour 4
+
+* 0 wildcard minutes 1
+* 0001 wildcard minutes 2
+* 23 wildcard minutes 3
