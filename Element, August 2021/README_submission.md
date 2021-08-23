@@ -41,7 +41,7 @@ A commented out version of this is intentionally left in for ease of replacement
 
 - The code makes heavy (but pragmantic) use of Swift features: enums, ranges, extensions, error handling etc. to simplify parsing and data 
   representation.  These precede the main algorithmic body of the code.
-- Top-level functionas are used rather than classes due to the scope of the task.
+- Top-level functions are used rather than classes due to the scope of the task.
 - Comments are liberal and may exceed good practice for production code in order to better explain thinking and specific Swift features that 
   may not be clear to an assessor.
 - As mentioned above, errors are surfaced via shell return values.  Due to the automated assessment of the program no visible error output is 
