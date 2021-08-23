@@ -15,10 +15,10 @@ represents the prompt) would look like :
 It reports any errors via standard POSIX shell return values (these may be examined after running by typing `echo $?`), and have the following 
 meanings:
 
-0 - success
-1 - Invalid Argument - the time was malformed
-2 - Invalid Crontab - the crontab was malformed.
-3 - Algorithmic - An internal error.  The final output failed algorithmic consistency checks. 
+- 0 - success
+- 1 - Invalid Argument - the time was malformed
+- 2 - Invalid Crontab - the crontab was malformed.
+- 3 - Algorithmic - An internal error.  The final output failed algorithmic consistency checks. 
 
 The crontab parsing is whitespace- and leading-zero-tolerant. 
 
