@@ -223,7 +223,6 @@ do {
 
             let lineTimeInMinutes = lineHour * 60  + lineMinutes
 
-
             if lineTimeInMinutes < nowTimeInMinutes {
                 relativeDay = .tomorrow
             }
