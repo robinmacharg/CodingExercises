@@ -31,3 +31,29 @@ applied to the implementation of MVVM/reactivity.
 9. There's an intentional delay (`sleep(Int.random()`) in processing the response to better show off the async updates.
 
 10. Standard delegate/datasource extensions do not have method docs.  It's assumed they're standard patterns and well understood.
+
+## Feedback notes
+
+> The idea behind is this task is very simple - to look at two things (the most important to us): architecture and threading. These two things are the most important to us at the moment.
+> 
+> With that being said, let’s look at your code and what you should have done differently:
+> 
+> 1. DispatchQueue.global().async - do not use global queues. See here: https://gist.github.com/tclementdev/6af616354912b0347cdf6db159c37057 and here https://developer.apple.com/videos/play/wwdc2017/706/
+> 
+> 2. Do not expose async code to VCs: 
+> 
+> 	- Method: MainVC.submitRequest(_:). You should not use queues here at all. Designing your classes in a way, that caller does not know which thread (main or not) will be used for that class is a great idea and all methods must be called from the main thread. So, Data class should have it’s own queue (or one queue per network stuff), API should have its own queue as well.
+> 	
+> 	The result would be like this:
+> 
+> 	func submitRequest() {
+> 		Data.createSquads(…competion: { 
+> 			API.sendRequest(completion: )
+> 		}		
+> 	}
+> 
+> 	You see, the great thing about this code is that you can reuse it in other environments (like iOS), you can remove your UI code and have business logic intact.
+> 	
+> I know you might get to the point where you will have a lot of completion handlers, but you can solve this problem with coroutines or promises or NSOperationQueue if you do not want to depend on the 3rd party stuff.
+> 
+> As a user of your API, I should not think about which queue that thing is running. As a designer of API, you won’t have to think about ways user used your API.
