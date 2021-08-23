@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         print("done: \(Date())")
     }
 
-
     private func callReconcileHelper(_ dataSetSize: DataSetSize) {
         var aIn: [Int] = []
         var bIn: [Int] = []
@@ -54,7 +53,6 @@ class ViewController: UIViewController {
         print(reconcileHelper(aIn, bIn)) // For smaller datasets
         //reconcileHelper(aIn, bIn) // We may not want to actually see larger datasets (>1000 elements?)
     }
-
 }
 
 /**
@@ -74,8 +72,7 @@ class ViewController: UIViewController {
  *
  * Review note: In this simple case the above should suffice as an explanation for production code.
  *              At the risk of over-commenting I've added some additional notes, below,
- *
- */
+  */
 @discardableResult
 func reconcileHelper(_ aIn: [Int], _ bIn: [Int]) -> String {
 
