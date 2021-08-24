@@ -23,21 +23,23 @@ class ViewController: UIViewController {
 
     // MARK: - Actions
 
-    /**
+        /**
      * Create a container for a Mac programmer's dependencies and start their day
      * Report back how we did to the boss (this VC is the boss)
      */
     @IBAction func startMacProgrammersDay(_ sender: Any) {
-        programmerResolver = try! Container()
-            // Coffee factory
-            .register(Coffee.self) { _ in
+        if let resolver = try? Container()
+            .register(Coffee.self, { _ in
                 return Caffeinated()
-            }
+            })
             .register(Computer.self, instance: Mac())
-        initialiseProgrammerResolver(resolver: programmerResolver)
-
-        if programmerResolver != nil {
-            doAHardDaysGraft(programmerResolver: programmerResolver!)
+        {
+            self.programmerResolver = resolver
+            initialiseProgrammerResolver(resolver: resolver)
+            doAHardDaysGraft(programmerResolver: self.programmerResolver!)
+        }
+        else {
+            // error handling
         }
     }
 
@@ -46,16 +48,18 @@ class ViewController: UIViewController {
      * Report back how we did to the boss (this VC is the boss)
      */
     @IBAction func startPCProgrammersDay(_ sender: Any) {
-        programmerResolver = try! Container()
-            // Coffee factory
-            .register(Coffee.self) { _ in
+        if let resolver = try? Container()
+            .register(Coffee.self, { _ in
                 return Decaf()
-            }
+            })
             .register(Computer.self, instance: PC())
-        initialiseProgrammerResolver(resolver: programmerResolver)
-
-        if programmerResolver != nil {
-            doAHardDaysGraft(programmerResolver: programmerResolver!)
+        {
+            self.programmerResolver = resolver
+            initialiseProgrammerResolver(resolver: resolver)
+            doAHardDaysGraft(programmerResolver: self.programmerResolver!)
+        }
+        else {
+            // error handling
         }
     }
 
