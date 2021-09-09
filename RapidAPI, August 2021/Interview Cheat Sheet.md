@@ -18,16 +18,19 @@ Notes to myself on common interview topics.  Please look away now if you don't w
 - [Reactive - RxSwift, ReactiveUI, Combine](#reactive---rxswift-reactiveui-combine)
 - [SOLID](#solid)
 - [Language features](#language-features)
-  - [enum](#enum)
-  - [generics](#generics)
-  - [protocol oriented](#protocol-oriented)
-  - [extensions](#extensions)
-  - [class vs structs](#class-vs-structs)
-  - [mutating](#mutating)
+  - [Enum](#enum)
+  - [Singleton](#singleton)
+  - [Generics](#generics)
+  - [Protocol oriented](#protocol-oriented)
+  - [Extensions](#extensions)
+  - [Class vs Structs](#class-vs-structs)
+  - [Mutating](#mutating)
   - [Type constraints with `where`](#type-constraints-with-where)
   - [Rich Switch](#rich-switch)
   - [Functional - `map`, `reduce`, `zip`, `filter`](#functional---map-reduce-zip-filter)
   - [Codable](#codable)
+  - [Property Decorators](#property-decorators)
+  - [Subscript Syntax](#subscript-syntax)
 - [Thread safety](#thread-safety)
   - [Mitigations](#mitigations)
 - [Build/Deploy](#builddeploy)
@@ -36,12 +39,14 @@ Notes to myself on common interview topics.  Please look away now if you don't w
   - [Deployment](#deployment)
     - [Fastlane](#fastlane)
     - [Firebase](#firebase)
+  - [Development Environment](#development-environment)
   - [Package Management](#package-management)
 - [Design Patterns](#design-patterns)
 - [Testing](#testing)
   - [Unit](#unit)
   - [CI](#ci)
 - [Literate coding](#literate-coding)
+- [Found Interview Questions](#found-interview-questions)
 
 ## External cheatsheets
 
@@ -78,16 +83,52 @@ MVVM + (Functional) Reactive
 - **Dependency Inversion Principle** High level modules should not depend on lower level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
 ## Language features
-### enum
-### generics
-### protocol oriented
-### extensions
-### class vs structs
-### mutating
+
+### Codable/JSON encoding
+
+```
+
+```
+
+### Enum
+
+Errors: 
+```
+enum CustomError: Error {
+    case anError
+    case unexpected(message: String)
+}
+```
+
+### Singleton
+
+```
+class Foo {
+    static let shared = Foo()
+    private init() {}
+}
+```
+
+### Generics
+
+Generics vs Opaque types - `some` keyword
+
+### Protocol oriented
+
+
+
+### Extensions
+### Class vs Structs
+
+Inheritance, ObjC interop, Single Instance requirement
+
+### Mutating
 ### Type constraints with `where`
 ### Rich Switch
 ### Functional - `map`, `reduce`, `zip`, `filter`
 ### Codable 
+### Property Decorators
+### Subscript Syntax
 
 keys, nested, custom (non-JSON) formats
 
@@ -109,6 +150,14 @@ keys, nested, custom (non-JSON) formats
 ### Deployment
 #### Fastlane
 #### Firebase
+
+### Development Environment
+
+- Xcode vs AppCode
+- `xcodeselect`
+- `xcprofile`
+- 
+
 ### Package Management
 Cocoapods vs. Carthage vs SPM
 
@@ -137,5 +186,6 @@ Comments at the Why level.  Playgrounds to highlight features (with `/*: ... */`
 
 List processing (``foreach {}`) vs `for/in`. Pragmatic clarity.
 
+## Found Interview Questions
 
-
+...

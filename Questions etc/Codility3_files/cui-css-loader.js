@@ -1,0 +1,1 @@
+document.write('<link rel="stylesheet" href="https://static-files.codility.com/prod/new-cui/59c8db0aa942c19a00ca.cui.css">');

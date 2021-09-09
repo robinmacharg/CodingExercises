@@ -8,6 +8,7 @@ Each task has typically been submitted in its own repo.  For simplicity commit h
 
 ## Exercises
 
+- [Super Awesome](Super%20Awesome,%20August%202021/Readme.MD) - Simple command-line anagram detection from input files
 - [You Need A Budget](You%20Need%20A%20Budget,%20March%202021/README.md) - Simple array diff
 - [Sky](Sky,%20August%202021/README.md) - Dependency injection framework with exemplar app
 - [Element](Element,%20August%202021) - Simplified Crontab parser and arbitrary 'next run' synthesis
