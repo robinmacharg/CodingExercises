@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Reactive Exercises-Reactive ExercisesUITests/Pods-Reactive Exercises-Reactive ExercisesUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework

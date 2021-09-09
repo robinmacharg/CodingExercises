@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Reactive_Exercises_Reactive_ExercisesUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Reactive_Exercises_Reactive_ExercisesUITests
+@end

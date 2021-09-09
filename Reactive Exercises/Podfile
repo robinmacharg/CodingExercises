@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Reactive Exercises' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Reactive Exercises
+
+  pod 'RxSwift'
+  pod 'RxCocoa'
+
+  target 'Reactive ExercisesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Reactive ExercisesUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_Reactive_ExercisesTests {
+  umbrella header "Pods-Reactive ExercisesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
