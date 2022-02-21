@@ -7,15 +7,18 @@
 
 import UIKit
 
-class MarketsViewController: UITableViewController {
+class MarketsViewController: UIViewController {
     
     // MARK: - Outlets
     
-    // None.
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var marketSelectionSegmentedControl: UISegmentedControl!
     
     // MARK: - Properties
     
     var model = MarketsViewControllerModel()
+    var refreshControl: UIRefreshControl!
     
     private var loadingIndicator: UIAlertController?
     
@@ -24,8 +27,8 @@ class MarketsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let refreshControl = UIRefreshControl()
-        self.refreshControl = refreshControl
+        refreshControl = UIRefreshControl()
+        tableView.refreshControl = refreshControl
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         
@@ -62,6 +65,15 @@ class MarketsViewController: UITableViewController {
             }
         }
     }
+
+    /**
+     * Scroll the table to the market selected by the top segmented control
+     */
+    @IBAction func marketChanged(_ sender: Any) {
+        let marketIndex = marketSelectionSegmentedControl.selectedSegmentIndex
+        let indexPath = IndexPath(row: 0, section: marketIndex)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+    }
     
     /**
      * Called by the table pull-to-refresh
@@ -73,18 +85,18 @@ class MarketsViewController: UITableViewController {
 
 // MARK: - <UITableViewDelegate>
 
-extension MarketsViewController {
+extension MarketsViewController: UITableViewDelegate {
     // Unused - would be removed in production code; left to show awareness.
 }
 
 // MARK: - <UITableViewDataSource>
 
-extension MarketsViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
+extension MarketsViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return model.markets == nil ? 0 : 3 // hardcoded
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         guard let markets = model.markets else {
             return 0
@@ -102,7 +114,7 @@ extension MarketsViewController {
         }
     }
     
-    override func tableView(
+    func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath)
     -> UITableViewCell
@@ -144,7 +156,7 @@ extension MarketsViewController {
      * Note: We could have used a custom header with the viewForHeaderInSection method.
      * This is simpler, and within the task scope.
      */
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 
         guard var text = MarketSection(rawValue: section)?.displayValue else {
             return "Unknown Market Values"
@@ -172,7 +184,7 @@ extension MarketsViewController {
        return text
     }
     
-    public override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50.0
     }
 }
