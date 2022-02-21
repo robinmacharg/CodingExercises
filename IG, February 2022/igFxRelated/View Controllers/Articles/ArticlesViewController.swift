@@ -53,9 +53,8 @@ class ArticlesViewController: UITableViewController {
             
             switch result {
             case .failure(let error):
-                print("failure: \(error.description)")
+                print("failure: \(error.description)") // TODO: error handling
             case .success(let articles):
-                print("success")
                 self.model.updateArticles(articles)
                 // Update the UI on the main thread
                 DispatchQueue.main.async {

@@ -32,14 +32,13 @@ class ArticleDetailViewController: UIViewController {
         
         // Kick off the image download, if any
         if let url = article.headlineImageURL {
-            print(url)
             API.shared.getData(url: url) { [self] result in
 
                 switch result {
                 case .failure(let error):
-                    print("failure: \(error.description)")
+                    // TODO: Error handling - shrink image size constraints/remove UIImageView
+                    print("An error occurred downloading the image: \(error)")
                 case .success(let imageData):
-                    print("success", imageData as! NSData)
                     if let image = UIImage(data: imageData) {
                         DispatchQueue.main.async {
                             self.mainImage.image = image
