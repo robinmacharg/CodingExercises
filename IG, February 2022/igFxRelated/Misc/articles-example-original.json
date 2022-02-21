@@ -1,0 +1,241 @@
+{
+    "breakingNews": null,
+    "topNews": [
+        {},
+        {
+            "title": "S&P 500, Nasdaq 100 Latest as Ukraine/Russia Crisis Continues to Dominate Risk Assets",
+            "url": "https://www.dailyfx.com/forex/market_alert/2022/02/18/SP-500-Nasdaq-100-Latest-as-UkraineRussia-Crisis-Continues-to-Dominate-Risk-Assets.html",
+            "description": "US equity indices are clawing back a portion of Thursday's heavy losses but while the situation in Eastern Europe remains volatile, the short-term outlook is highly uncertain.",
+            "content": null,
+            "firstImageUrl": null,
+            "headlineImageUrl": "https://a.c-dn.net/b/0XoNI3/headline_traders8.JPG",
+            "articleImageUrl": null,
+            "backgroundImageUrl": null,
+            "videoType": null,
+            "videoId": null,
+            "videoUrl": null,
+            "videoThumbnail": null,
+            "newsKeywords": "s&p 500, nasdaq 100, indices",
+            "authors": [],
+            "instruments": [
+                "NAS100",
+                "SPX500"
+            ],
+            "tags": [
+                "Indices",
+                "S&P 500",
+                "Nasdaq 100",
+                "Ukraine Russia"
+            ],
+            "categories": [
+                "forex",
+                "market_alert"
+            ],
+            "displayTimestamp": 1645185600000,
+            "lastUpdatedTimestamp": 1645184690845
+        },
+        {
+            "title": "Bitcoin (BTC) Update: Ukraine Joins Russia in Legalizing Bitcoin",
+            "url": "https://www.dailyfx.com/forex/market_alert/2022/02/18/Bitcoin-BTC-Update-Ukraine-Joins-Russia-in-Legalizing-Bitcoin-RS.html",
+            "description": "Ukraine’s parliament adopted a law that legalizes and regulates cryptocurrency just a few weeks after Russia did the same.",
+            "content": null,
+            "firstImageUrl": null,
+            "headlineImageUrl": "https://a.c-dn.net/b/0LmX9P/headline_GettyImages-932732414.jpg",
+            "articleImageUrl": null,
+            "backgroundImageUrl": null,
+            "videoType": null,
+            "videoId": null,
+            "videoUrl": null,
+            "videoThumbnail": null,
+            "newsKeywords": null,
+            "authors": [
+                {
+                    "name": "Richard Snow",
+                    "title": "Analyst",
+                    "bio": "https://www.dailyfx.com/authors/bio/Richard_Snow",
+                    "email": null,
+                    "phone": null,
+                    "facebook": null,
+                    "twitter": null,
+                    "googleplus": null,
+                    "subscription": null,
+                    "rss": null,
+                    "descriptionLong": "&lt;h2&gt;&lt;strong&gt;At DailyFX Since:&lt;/strong&gt; 2018&lt;/h2&gt;  &lt;h2&gt;&lt;strong&gt;Trading Style&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Analytical Profile: Technical and Fundamental&lt;/li&gt; &lt;li&gt;Time Frame: Medium-Term (2 Days to 2 Weeks)&lt;/li&gt; &lt;li&gt;Type: Swing&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;a href=&quot;/research/dna-fx&quot;&gt;Can we guess your trading personality?&lt;/a&gt;&lt;/p&gt;   &lt;h2&gt;&lt;strong&gt;Experience&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt;  &lt;li&gt;4 years of experience in financial markets&lt;/li&gt; &lt;li&gt;Worked 1 year at IG in the trading services team&lt;/li&gt; &lt;/ul&gt;  &lt;h2&gt;&lt;strong&gt;Education&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Bcom Honours degree in Investment Management from the University of Johannesburg&lt;/li&gt; &lt;li&gt;Bcom Honours degree in Insurance &amp; Risk Management from the University of the Witwatersrand (Wits)&lt;/li&gt; &lt;/ul&gt;  &lt;h2&gt;&lt;strong&gt;Most Important Trading Lesson Learned&lt;/strong&gt;&lt;/h2&gt;  &lt;p&gt;&#8220;Sometimes the best trade is no trade at all. A rushed trade without proper analysis and execution is a recipe for disaster&#8221;&lt;/p&gt;",
+                    "descriptionShort": "At DailyFX Since: 2018. Experience: 4 years of experience in financial markets. Worked 1 year at IG in the trading services team.",
+                    "photo": "https://a.c-dn.net/b/034jL7.png#Richard%20Snow.png"
+                }
+            ],
+            "instruments": [
+                "BITCOIN"
+            ],
+            "tags": [
+                "Bitcoin",
+                "BTC/USD",
+                "Ukraine Legalizes cryptocurrency"
+            ],
+            "categories": [
+                "forex",
+                "market_alert"
+            ],
+            "displayTimestamp": 1645180200000,
+            "lastUpdatedTimestamp": 1645193319464
+        }
+    ],
+    "dailyBriefings": {
+        "eu": [
+            {
+                "title": "Euro Technical Analysis: Signs of a Near-Term Top –  Setups for EUR/GBP, EUR/JPY, EUR/USD",
+                "url": "https://www.dailyfx.com/forex/fundamental/daily_briefing/daily_pieces/top_fx_headlines/2022/02/08/euro-technical-analysis-signs-of-a-near-term-top-setups-for-eur-gbp-eur-jpy-eur-usd.html",
+                "description": "The rally in the EUR-crosses may be finished.",
+                "content": null,
+                "firstImageUrl": null,
+                "headlineImageUrl": "https://a.c-dn.net/b/1orksJ/headline_262576440_1-7.jpg",
+                "articleImageUrl": null,
+                "backgroundImageUrl": null,
+                "videoType": null,
+                "videoId": null,
+                "videoUrl": null,
+                "videoThumbnail": null,
+                "newsKeywords": "eur/usd rate forecast, eur/usd technical analysis, eur/usd rate chart, eur/usd chart, eur/usd rate, euro forecast, euro rate, euro rate forecast, euro to dollar, ecb rate expectations, ecb rate expectations, european central bank rate cut odds, ecb rate cut odds, coronavirus pandemic, covid-19",
+                "authors": [
+                    {}
+                ],
+                "instruments": [
+                    "EUR/USD",
+                    "EUR/JPY",
+                    "EUR/GBP",
+                    "EUR",
+                    "FXE"
+                ],
+                "tags": [
+                    "ecb rate",
+                    "eur/gbp rate",
+                    "omicron variant",
+                    "ecb rate",
+                    "eur/jpy rate",
+                    "eur/usd rate",
+                    "nord stream 2"
+                ],
+                "categories": [
+                    "forex",
+                    "fundamental",
+                    "daily_briefing",
+                    "daily_pieces",
+                    "top_fx_headlines"
+                ],
+                "displayTimestamp": 1644338220000,
+                "lastUpdatedTimestamp": 1644338650054
+            }
+        ],
+        "asia": [
+            {
+                "title": "British Pound Pops Higher as Ukraine Risks Ebb and Flow. Will GBP/USD Break Higher?",
+                "url": "https://www.dailyfx.com/forex/fundamental/daily_briefing/session_briefing/euro_open/2022/02/18/British-Pound-Pops-Higher-as-Ukraine-Risks-Ebb-and-Flow.-Will-GBPUSD-Break-Higher.html",
+                "description": "The British Pound has shrugged off geopolitical concerns as risk assets see saw on news flow from the Ukraine. Will GBP/USD benefit further?",
+                "content": null,
+                "firstImageUrl": null,
+                "headlineImageUrl": "https://a.c-dn.net/b/1OSHdG/headline_LSE_4.JPG",
+                "articleImageUrl": null,
+                "backgroundImageUrl": null,
+                "videoType": null,
+                "videoId": null,
+                "videoUrl": null,
+                "videoThumbnail": null,
+                "newsKeywords": "British Pound, GBP/USD, Crude Oil, GOLD, AUD, NZD, CAD, NOK, JPY, CHF",
+                "authors": [
+                    {
+                        "name": "Daniel McCarthy",
+                        "title": "Strategist",
+                        "bio": "https://www.dailyfx.com/authors/bio/Daniel_McCarthy",
+                        "email": null,
+                        "phone": null,
+                        "facebook": null,
+                        "twitter": "https://twitter.com/DanMcCarthyFX",
+                        "googleplus": null,
+                        "subscription": null,
+                        "rss": null,
+                        "descriptionLong": "&lt;h2&gt;&lt;strong&gt;At DailyFX Since:&lt;/strong&gt; 2021&lt;/h2&gt; &lt;h2&gt;&lt;strong&gt;Trading Style&lt;/h2&gt;&lt;/strong&gt; &lt;ul&gt; &lt;li&gt;Analytical Style: Macro inter-market, fundamental and technical&lt;/li&gt; &lt;li&gt;Time Frame: Medium-Long Term&lt;/li&gt; &lt;li&gt;Type: Position&lt;/li&gt; &lt;/ul&gt; &lt;h2&gt;&lt;strong&gt;Experience&lt;/h2&gt;&lt;/strong&gt; &lt;ul&gt; &lt;li&gt;Commercial Bank FX price maker to clients and the inter-bank market&lt;/li&gt; &lt;li&gt;Portfolio Manager handling currency exposure of Australia&#8217;s largest fund manager developing currency overlay programs&lt;/li&gt; &lt;li&gt;Portfolio Manager with the Global Government Bond Fund&lt;/li&gt; &lt;li&gt;Managed private capital using various strategies across equities, FX, commodities and rates&lt;/li&gt; &lt;/ul&gt; &lt;h2&gt;&lt;strong&gt;Education&lt;/h2&gt;&lt;/strong&gt; &lt;p&gt;Master of Business in Finance, University of Technology, Sydney&lt;/p&gt; &lt;p&gt;Certificate IV in Training and Assessment&lt;/p&gt; &lt;h2&gt;&lt;strong&gt;Most Important trading Lesson Learned&lt;/h2&gt;&lt;/strong&gt; &lt;p&gt;Plan the trade, then trade the plan. Always.&lt;/p&gt;",
+                        "descriptionShort": "Daniel McCarthy - Trading Style: Analytical Style: Macro inter-market, fundamental and technical, Time Frame: Medium-Long Term, Type: Position.",
+                        "photo": "https://a.c-dn.net/b/4jGML5.png#Daniel%20McCarthy.png"
+                    }
+                ],
+                "instruments": [
+                    "GBP/USD",
+                    "GOLD",
+                    "OIL",
+                    "AUD/USD",
+                    "USD/JPY"
+                ],
+                "tags": [
+                    "gbp-usd",
+                    "gold-price",
+                    "crude-oil",
+                    "aud-usd",
+                    "usd-jpy"
+                ],
+                "categories": [
+                    "forex",
+                    "fundamental",
+                    "daily_briefing",
+                    "session_briefing",
+                    "euro_open"
+                ],
+                "displayTimestamp": 1645164000000,
+                "lastUpdatedTimestamp": 1645165144683
+            }
+        ],
+        "us": [
+            {
+                "title": "Dow, S&P 500, Nasdaq Price Forecasts: Bears Brewing, Bullard Ahead",
+                "url": "https://www.dailyfx.com/forex/fundamental/daily_briefing/session_briefing/daily_fundamentals/2022/02/17/Dow-YM-SPX-SPY-ES-SP500-Nasdaq-NQ-NDX-Price-Forecasts-Bears-Brewing-Bullard-Ahead.html",
+                "description": "US equities have held up relatively well so far in February. But that might be on the verge of change as James Bullard is set to speak again, with Russia-Ukraine tensions growing louder.",
+                "content": null,
+                "firstImageUrl": null,
+                "headlineImageUrl": "https://a.c-dn.net/b/3xzHoJ/headline_GettyImages-1068942638.jpg",
+                "articleImageUrl": null,
+                "backgroundImageUrl": null,
+                "videoType": null,
+                "videoId": null,
+                "videoUrl": null,
+                "videoThumbnail": null,
+                "newsKeywords": "SPX, SPY, ES, S&P 500, Nasdaq 100, NQ, NDX, Dow, Dow Jones, DJIA, YM",
+                "authors": [
+                    {
+                        "name": "James Stanley",
+                        "title": "Senior Strategist",
+                        "bio": "https://www.dailyfx.com/authors/bio/James_Stanley",
+                        "email": null,
+                        "phone": null,
+                        "facebook": null,
+                        "twitter": "https://twitter.com/JStanleyFX",
+                        "googleplus": "https://plus.google.com/u/0/101780673289329325248/posts",
+                        "subscription": null,
+                        "rss": "https://www.dailyfx.com/feeds/james_stanley",
+                        "descriptionLong": "&lt;h2&gt;&lt;strong&gt;At DailyFX Since:&lt;/strong&gt; 2010&lt;/h2&gt;  &lt;h2&gt;&lt;strong&gt;Trading Style&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Analytical Profile: Technical and Fundamental &lt;/li&gt; &lt;li&gt;Time Frame: Medium-Term (2 Days to 2 Weeks) &lt;/li&gt; &lt;li&gt;Type: Event-Driven &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;a href=&quot;/research/dna-fx&quot;&gt;Can we guess your trading personality?&lt;/a&gt;&lt;/p&gt;   &lt;h2&gt;&lt;strong&gt;Experience&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt;  &lt;li&gt;Started working with equities in 1999, options in 2000 and FX in 2009&lt;/li&gt; &lt;li&gt;Worked at Merrill Lynch, Fidelity and TD Ameritrade&lt;/li&gt; &lt;li&gt;Frequent contributor to ZeroHedge.com&lt;/li&gt; &lt;li&gt;Has spoken at numerous trader expos and conferences over the years&lt;/li&gt; &lt;/ul&gt; &lt;h2&gt;&lt;strong&gt;Education&lt;/strong&gt;&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Bachelor of Business Administration degree in Financial Services and Planning from Baylor University&#8217;s Hankamer School of Business&lt;/li&gt; &lt;/ul&gt;  &lt;h2&gt; &lt;strong&gt;Most Important Trading Lesson Learned&lt;/strong&gt;&lt;/h2&gt;  &lt;p&gt;&#8220;If you don&#8217;t manage your risk, it will manage you. Without a good defense, your offense doesn&#8217;t matter. And &#8211; hope is a terrible trading strategy.&#8221;&lt;/p&gt;",
+                        "descriptionShort": "At DailyFX Since: 2010. Experience: Started working with equities in 1999, options in 2000 and FX in 2009. Worked at Merrill Lynch, Fidelity and TD Ameritrade. Frequent contributor to ZeroHedge.com. Has spoken at numerous trader expos and conferences over the years.",
+                        "photo": "https://a.c-dn.net/b/31bXVG.png#James%20Stanley.png"
+                    }
+                ],
+                "instruments": [
+                    "SPX500",
+                    "NAS100",
+                    "US30"
+                ],
+                "tags": [
+                    "LiveEdu"
+                ],
+                "categories": [
+                    "forex",
+                    "fundamental",
+                    "daily_briefing",
+                    "session_briefing",
+                    "daily_fundamentals"
+                ],
+                "displayTimestamp": 1645110000000,
+                "lastUpdatedTimestamp": 1645110018201
+            }
+        ]
+    },
+    "technicalAnalysis": [],
+    "specialReport": []
+}

@@ -1,0 +1,83 @@
+{
+    "indices": [
+        {
+            "displayName": "USDOLLAR",
+            "marketId": "DX",
+            "epic": "CC.D.DX.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/us-dollar-index",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "US 500",
+            "marketId": "US500",
+            "epic": "IX.D.SPTRD.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/sp-500",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 2,
+            "calendarMapping": [
+                "USD"
+            ]
+        }
+    ],
+    "commodities": [
+        {
+            "displayName": "Spot Gold",
+            "marketId": "GC",
+            "epic": "CS.D.CFDGOLD.CFDGC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gold-price",
+            "topMarket": true,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 2,
+            "calendarMapping": [
+                "USD"
+            ]
+        }
+    ],
+    "currencies": [
+        {
+            "displayName": "EUR/USD",
+            "marketId": "EURUSD",
+            "epic": "CS.D.EURUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-usd",
+            "topMarket": true,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "GBP/USD",
+            "marketId": "GBPUSD",
+            "epic": "CS.D.GBPUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-usd",
+            "topMarket": true,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "GBP",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "USD/JPY",
+            "marketId": "USDJPY",
+            "epic": "CS.D.USDJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-jpy",
+            "topMarket": true,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD",
+                "JPY"
+            ]
+        }
+    ]
+}

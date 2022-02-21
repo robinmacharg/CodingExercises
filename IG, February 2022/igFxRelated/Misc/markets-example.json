@@ -1,0 +1,782 @@
+{
+    "currencies": [
+        {
+            "displayName": "EUR/USD",
+            "marketId": "EURUSD",
+            "epic": "CS.D.EURUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-usd",
+            "topMarket": true,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "GBP/USD",
+            "marketId": "GBPUSD",
+            "epic": "CS.D.GBPUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-usd",
+            "topMarket": true,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "GBP",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "USD/JPY",
+            "marketId": "USDJPY",
+            "epic": "CS.D.USDJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-jpy",
+            "topMarket": true,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "AUD/USD",
+            "marketId": "AUDUSD",
+            "epic": "CS.D.AUDUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/aud-usd",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "AUD",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "USD/CAD",
+            "marketId": "USDCAD",
+            "epic": "CS.D.USDCAD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-cad",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD",
+                "CAD"
+            ]
+        },
+        {
+            "displayName": "BITCOIN",
+            "marketId": "BITCOIN",
+            "epic": "CS.D.BITCOIN.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/bitcoin",
+            "topMarket": true,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "ETHEREUM",
+            "marketId": "ETHUSD",
+            "epic": "CS.D.ETHUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/ether-eth",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "RIPPLE",
+            "marketId": "XRPUSD",
+            "epic": "CS.D.XRPUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/ripple-xrp",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "LITECOIN",
+            "marketId": "LTCUSD",
+            "epic": "CS.D.LTCUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/litecoin-ltc",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "NZD/USD",
+            "marketId": "NZDUSD",
+            "epic": "CS.D.NZDUSD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/nzd-usd",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "NZD",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "AUD/CAD",
+            "marketId": "AUDCAD",
+            "epic": "CS.D.AUDCAD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/aud-cad",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "AUD",
+                "CAD"
+            ]
+        },
+        {
+            "displayName": "AUD/JPY",
+            "marketId": "AUDJPY",
+            "epic": "CS.D.AUDJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/aud-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "AUD",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "CAD/JPY",
+            "marketId": "CADJPY",
+            "epic": "CS.D.CADJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/cad-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "CAD",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "CHF/JPY",
+            "marketId": "CHFJPY",
+            "epic": "CS.D.CHFJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/chf-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "CHF",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "EUR/AUD",
+            "marketId": "EURAUD",
+            "epic": "CS.D.EURAUD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-aud",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "AUD"
+            ]
+        },
+        {
+            "displayName": "EUR/CAD",
+            "marketId": "EURCAD",
+            "epic": "CS.D.EURCAD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-cad",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "CAD"
+            ]
+        },
+        {
+            "displayName": "EUR/CHF",
+            "marketId": "EURCHF",
+            "epic": "CS.D.EURCHF.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-chf",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "CHF"
+            ]
+        },
+        {
+            "displayName": "EUR/GBP",
+            "marketId": "EURGBP",
+            "epic": "CS.D.EURGBP.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-gbp",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "GBP"
+            ]
+        },
+        {
+            "displayName": "EUR/JPY",
+            "marketId": "EURJPY",
+            "epic": "CS.D.EURJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "EUR",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "GBP/CHF",
+            "marketId": "GBPCHF",
+            "epic": "CS.D.GBPCHF.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-chf",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "GBP",
+                "CHF"
+            ]
+        },
+        {
+            "displayName": "GBP/JPY",
+            "marketId": "GBPJPY",
+            "epic": "CS.D.GBPJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "GBP",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "USD/CHF",
+            "marketId": "USDCHF",
+            "epic": "CS.D.USDCHF.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-chf",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD",
+                "CHF"
+            ]
+        },
+        {
+            "displayName": "USD/NOK",
+            "marketId": "USDNOK",
+            "epic": "CS.D.USDNOK.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-nok",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "USD/SEK",
+            "marketId": "USDSEK",
+            "epic": "CS.D.USDSEK.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-sek",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "AUD/CHF",
+            "marketId": "AUDCHF",
+            "epic": "CS.D.AUDCHF.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/aud-chf",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "AUD",
+                "CHF"
+            ]
+        },
+        {
+            "displayName": "AUD/NZD",
+            "marketId": "AUDNZD",
+            "epic": "CS.D.AUDNZD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/aud-nzd",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "AUD",
+                "NZD"
+            ]
+        },
+        {
+            "displayName": "CAD/CHF",
+            "marketId": "CADCHF",
+            "epic": "CS.D.CADCHF.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/cad-chf",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "CAD",
+                "CHF"
+            ]
+        },
+        {
+            "displayName": "EUR/NOK",
+            "marketId": "EURNOK",
+            "epic": "CS.D.EURNOK.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-nok",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR"
+            ]
+        },
+        {
+            "displayName": "EUR/NZD",
+            "marketId": "EURNZD",
+            "epic": "CS.D.EURNZD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-nzd",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR",
+                "NZD"
+            ]
+        },
+        {
+            "displayName": "EUR/SEK",
+            "marketId": "EURSEK",
+            "epic": "CS.D.EURSEK.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-sek",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR"
+            ]
+        },
+        {
+            "displayName": "EUR/TRY",
+            "marketId": "EURTRY",
+            "epic": "CS.D.EURTRY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/eur-try",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "EUR"
+            ]
+        },
+        {
+            "displayName": "GBP/AUD",
+            "marketId": "GBPAUD",
+            "epic": "CS.D.GBPAUD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-aud",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "GBP",
+                "AUD"
+            ]
+        },
+        {
+            "displayName": "GBP/CAD",
+            "marketId": "GBPCAD",
+            "epic": "CS.D.GBPCAD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-cad",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "GBP",
+                "CAD"
+            ]
+        },
+        {
+            "displayName": "GBP/NZD",
+            "marketId": "GBPNZD",
+            "epic": "CS.D.GBPNZD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gbp-nzd",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "GBP",
+                "NZD"
+            ]
+        },
+        {
+            "displayName": "NZD/CAD",
+            "marketId": "NZDCAD",
+            "epic": "CS.D.NZDCAD.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/nzd-cad",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "NZD",
+                "CAD"
+            ]
+        },
+        {
+            "displayName": "NZD/CHF",
+            "marketId": "NZDCHF",
+            "epic": "CS.D.NZDCHF.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/nzd-chf",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "NZD",
+                "CHF"
+            ]
+        },
+        {
+            "displayName": "NZD/JPY",
+            "marketId": "NZDJPY",
+            "epic": "CS.D.NZDJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/nzd-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "NZD",
+                "JPY"
+            ]
+        },
+        {
+            "displayName": "USD/CNH",
+            "marketId": "USDCNH",
+            "epic": "CS.D.USDCNH.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-cnh",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD",
+                "CNY"
+            ]
+        },
+        {
+            "displayName": "USD/MXN",
+            "marketId": "USDMXN",
+            "epic": "CS.D.USDMXN.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-mxn",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD",
+                "MXN"
+            ]
+        },
+        {
+            "displayName": "USD/TRY",
+            "marketId": "USDTRY",
+            "epic": "CS.D.USDTRY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-try",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "USD/ZAR",
+            "marketId": "USDZAR",
+            "epic": "CS.D.USDZAR.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/usd-zar",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "TRY/JPY",
+            "marketId": "TRYJPY",
+            "epic": "CS.D.TRYJPY.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/try-jpy",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "JPY"
+            ]
+        }
+    ],
+    "commodities": [
+        {
+            "displayName": "Spot Gold",
+            "marketId": "GC",
+            "epic": "CS.D.CFDGOLD.CFDGC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/gold-price",
+            "topMarket": true,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 2,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Spot Silver",
+            "marketId": "SI",
+            "epic": "CS.D.CFDSILVER.CFDSI.IP",
+            "rateDetailURL": "https://www.dailyfx.com/silver-prices",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Oil - US Crude",
+            "marketId": "CL",
+            "epic": "CC.D.CL.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/crude-oil",
+            "topMarket": true,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Oil - Brent Crude",
+            "marketId": "LCO",
+            "epic": "CC.D.LCO.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/crude-oil",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "EUR",
+                "GBP",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Copper",
+            "marketId": "HG",
+            "epic": "CC.D.HG.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/copper-prices",
+            "topMarket": false,
+            "unscalingFactor": 10000,
+            "unscaledDecimals": 5,
+            "calendarMapping": [
+                "USD",
+                "AUD"
+            ]
+        },
+        {
+            "displayName": "Natural Gas",
+            "marketId": "NG",
+            "epic": "CC.D.NG.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/natural-gas",
+            "topMarket": false,
+            "unscalingFactor": 1000,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD"
+            ]
+        }
+    ],
+    "indices": [
+        {
+            "displayName": "USDOLLAR",
+            "marketId": "DX",
+            "epic": "CC.D.DX.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/us-dollar-index",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "US 500",
+            "marketId": "US500",
+            "epic": "IX.D.SPTRD.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/sp-500",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 2,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Wall Street",
+            "marketId": "WALL",
+            "epic": "IX.D.DOW.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/dow-jones",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "US Tech 100",
+            "marketId": "USTECH",
+            "epic": "IX.D.NASDAQ.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/nas-100",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Germany 30",
+            "marketId": "DE30",
+            "epic": "IX.D.DAX.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/dax-30",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD",
+                "EUR"
+            ]
+        },
+        {
+            "displayName": "FTSE 100",
+            "marketId": "FT100",
+            "epic": "IX.D.FTSE.CFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/ftse-100",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "GBP",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Australia 200",
+            "marketId": "AU200",
+            "epic": "IX.D.ASX.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/asx-200",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "AUD",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Japan 225",
+            "marketId": "JP225",
+            "epic": "IX.D.NIKKEI.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/nikkei-225",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "JPY",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "France 40",
+            "marketId": "FR40",
+            "epic": "IX.D.CAC.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/cac-40",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "EUR",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Hong Kong HS50",
+            "marketId": "HS34",
+            "epic": "IX.D.HANGSENG.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/charts?pair=HKG33",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "CNY",
+                "USD"
+            ]
+        },
+        {
+            "displayName": "Spain 35",
+            "marketId": "ES35",
+            "epic": "IX.D.IBEX.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/charts?pair=ESP35",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 1,
+            "calendarMapping": [
+                "USD",
+                "EUR"
+            ]
+        },
+        {
+            "displayName": "EU Stocks 50",
+            "marketId": "EU50",
+            "epic": "IX.D.STXE.IFD.IP",
+            "rateDetailURL": "https://www.dailyfx.com/charts?pair=EUSTX50",
+            "topMarket": false,
+            "unscalingFactor": 1,
+            "unscaledDecimals": 2,
+            "calendarMapping": [
+                "USD",
+                "EUR"
+            ]
+        },
+        {
+            "displayName": "Bund",
+            "marketId": "FGBL",
+            "epic": "CC.D.FGBL.UNC.IP",
+            "rateDetailURL": "https://www.dailyfx.com/charts?pair=Bund",
+            "topMarket": false,
+            "unscalingFactor": 100,
+            "unscaledDecimals": 3,
+            "calendarMapping": [
+                "USD",
+                "EUR"
+            ]
+        }
+    ]
+}

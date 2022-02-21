@@ -1,0 +1,37 @@
+{
+    "topNews": [
+        {},
+        {
+            "title": "S&P 500, Nasdaq 100 Latest as Ukraine/Russia Crisis Continues to Dominate Risk Assets",
+            "url": "https://www.dailyfx.com/forex/market_alert/2022/02/18/SP-500-Nasdaq-100-Latest-as-UkraineRussia-Crisis-Continues-to-Dominate-Risk-Assets.html",
+            "description": "US equity indices are clawing back a portion of Thursday's heavy losses but while the situation in Eastern Europe remains volatile, the short-term outlook is highly uncertain.",
+            "content": null,
+            "firstImageUrl": null,
+            "headlineImageUrl": "https://a.c-dn.net/b/0XoNI3/headline_traders8.JPG",
+            "articleImageUrl": null,
+            "backgroundImageUrl": null,
+            "videoType": null,
+            "videoId": null,
+            "videoUrl": null,
+            "videoThumbnail": null,
+            "newsKeywords": "s&p 500, nasdaq 100, indices",
+            "authors": [],
+            "instruments": [
+                "NAS100",
+                "SPX500"
+            ],
+            "tags": [
+                "Indices",
+                "S&P 500",
+                "Nasdaq 100",
+                "Ukraine Russia"
+            ],
+            "categories": [
+                "forex",
+                "market_alert"
+            ],
+            "displayTimestamp": 1645185600000,
+            "lastUpdatedTimestamp": 1645184690845
+        }
+    ],
+}
