@@ -1,0 +1,68 @@
+<!-- Example Pusher webpage with private client events -->
+
+<html>
+    <head>
+        <script src="jquery-3.5.1.js"></script>
+        <script src="https://js.pusher.com/6.0.3/pusher-with-encryption.js"></script>
+        
+        <script>
+
+          // Enable pusher logging - don't include this in production
+          Pusher.logToConsole = true;
+
+          var pusher = new Pusher('7e01c26517a8917dfd01', {
+            cluster: 'eu',
+            authEndpoint: 'http://127.0.0.1:5000/pusher/auth'
+          });
+
+          var publicChannel = pusher.subscribe('my-channel');
+          publicChannel.bind('my-event', function(data) {
+            alert(JSON.stringify(data));
+          });
+        
+          var privateChannel = pusher.subscribe('private-my-channel');
+        </script>
+        
+    </head>
+    
+    <body>
+        <h1>Pusher Channels example</h1>
+        <p>
+        Some explanatory text...
+        </p>
+        
+        <p>Type into the box below:</p>
+        <textarea id="input" name="input" rows="4" cols="50"></textarea>
+        
+        <script>
+            var typingTimer;                // Timer identifier
+            var doneTypingInterval = 1000;  // Time in ms, 3 seconds for example
+            var $input = $('#input');       // The textbox to monitor
+            var isTyping = false;
+            
+            // On keyup, start the countdown
+            $input.on('keyup', function () {
+              clearTimeout(typingTimer);
+              typingTimer = setTimeout(doneTyping, doneTypingInterval);
+            });
+
+            // On keydown, clear the countdown
+            $input.on('keydown', function () {
+              // Note: Rough and ready so, e.g., will fire when cmd-tabbing to the simulator.
+              // Keypress filter required.
+              
+              clearTimeout(typingTimer);
+              if (!isTyping) {
+                  isTyping = true;
+                  privateChannel.trigger("client-my-event", {"typing": true, "user" : "Robin"});
+              }
+            });
+
+            //user is finished typing, do something
+            function doneTyping () {
+              isTyping = false;
+              privateChannel.trigger("client-my-event", {"typing": false, "user" : "Robin"});
+            }
+        </script>
+    </body>
+</html>

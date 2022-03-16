@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ChannelsTest1/Pods-ChannelsTest1-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
