@@ -28,12 +28,13 @@ class MarketsViewController: UIViewController {
         super.viewDidLoad()
         
         refreshControl = UIRefreshControl()
-        tableView.refreshControl = refreshControl
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         
         // Ensure that the refresh control is under the table
         refreshControl.layer.zPosition = -1
+        
+        tableView.refreshControl = refreshControl
         
         loadData()
     }
@@ -48,19 +49,20 @@ class MarketsViewController: UIViewController {
         loadingIndicator = self.showBusyIndicator(message: "Loading Markets...")
         
         API.shared.getMarkets { [self] result in
-            hideBusyIndicator(loader: loadingIndicator)
+            hideBusyIndicator(loader: loadingIndicator) {
             
-            switch result {
-            case .failure(let error):
-                print("failure: \(error.localizedDescription)")
-            case .success(let markets):
-                model.updateMarkets(markets)
-                // Update the UI on the main thread
-                DispatchQueue.main.async {
-                    if refreshControl?.isRefreshing ?? false {
-                        refreshControl?.endRefreshing()
+                switch result {
+                case .failure(let error):
+                    print("failure: \(error.localizedDescription)")
+                case .success(let markets):
+                    model.updateMarkets(markets)
+                    // Update the UI on the main thread
+                    DispatchQueue.main.async {
+                        if tableView.refreshControl?.isRefreshing ?? true {
+                            tableView.refreshControl?.endRefreshing()
+                        }
+                        tableView.reloadData()
                     }
-                    tableView.reloadData()
                 }
             }
         }
@@ -86,6 +88,11 @@ class MarketsViewController: UIViewController {
 // MARK: - <UITableViewDelegate>
 
 extension MarketsViewController: UITableViewDelegate {
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: <#T##IndexPath#>, animated: <#T##Bool#>)
+//    }
+    
     // Unused - would be removed in production code; left to show awareness.
 }
 

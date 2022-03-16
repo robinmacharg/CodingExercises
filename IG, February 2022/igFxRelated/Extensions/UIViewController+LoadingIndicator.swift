@@ -24,9 +24,9 @@ extension UIViewController {
         return alert
     }
     
-    func hideBusyIndicator(loader : UIAlertController?) {
+    func hideBusyIndicator(loader : UIAlertController?, _ completion: (() -> Void)? = nil) {
         DispatchQueue.main.async {
-            loader?.dismiss(animated: true, completion: nil)
+            loader?.dismiss(animated: true, completion: completion)
         }
     }
 }
