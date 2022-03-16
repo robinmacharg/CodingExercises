@@ -1,0 +1,7 @@
+abc
+fun
+bac
+fun
+cba
+unf
+hello
