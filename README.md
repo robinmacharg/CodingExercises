@@ -16,3 +16,6 @@ Each task has typically been submitted in its own repo.  For simplicity commit h
 - ⭐️ [Not On The High Street](Not%20On%20The%20High%20Street%2C%20August%202021/swift/Sources/GildedRose/GildedRose.swift) - Gilded Rose Refactoring Kata.  My version is in the Swift subdirectory.  TODO: README
 - [RapidAPI/PAW](RapidAPI,%20August%202021/README.md) - Simple Mac JSON API access with OutlineView
 - [IG](IG,%20February%202022/README_submission.md) - Two screen tableview that accesses financial data web API
+- [Pusher](Pusher,%20June%202020/README.md) - Demonstrations of using Pusher's websockets library
+- [Monetize](Monetize,%20November%2013) - An ObjC master/detail app with XML loading/parsing, table view etc.
+- [Backbase](Backbase,%20July%202020/Instructions%20for%20the%20test.md) - UIKit-basd JSON parsing, Scrollable list, `MapKit` secondary screen with location pin
