@@ -89,9 +89,6 @@ class DashboardViewController: UIViewController {
                 print("Open Marketplace")
                 let body = Empty()
 
-
-
-
                 Task {
                     do {
                         guard let response = try await APIService.shared.makeAsyncRequest(
@@ -102,12 +99,10 @@ class DashboardViewController: UIViewController {
                             Log.error("Error")
                             return
                         }
-                        print(response)
                         let productView = ProductListView(products: response.data)
                         let hostingController = UIHostingController(rootView: productView)
                         self.show(hostingController, sender: self)
                     } catch let error {
-                        print(error)
                         Log.error("Error: \(error)")
                     }
                 }

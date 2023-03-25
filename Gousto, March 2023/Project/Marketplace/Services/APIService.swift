@@ -48,13 +48,6 @@ extension APIService {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
 
-//        if let bodyObject = body, let requestBody = try? JSONEncoder().encode(bodyObject) {
-//            request.httpBody = requestBody
-//        }
-
-//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.addValue("application/json", forHTTPHeaderField: "Accept")
-
         return request
     }
 
