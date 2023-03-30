@@ -4,6 +4,9 @@ Evaluation task for Pulselive, 03/2023
 
 Submitted by Robin Macharg (robin.macharg@gmail.com) 
 
+A two-screen master/detail SwiftUI app with fully-featured async networking, logging, dependency injection, 
+pull-to-refresh and mock-using tests.
+
 - Written with Xcode 14.1, on an M1 MBP, targetting iOS 16.1.  Destinations left as the default (iPhone, iPad, Mac)
 - Signing will likely need updated before running on a real device.
 
