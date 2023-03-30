@@ -9,7 +9,7 @@ Each task has typically been submitted in its own repo.  For simplicity commit h
 ## Exercises
 
 - ⭐️ [Pulselive](Pulselive,%20March%202023/README.md) - A two-screen master/detail SwiftUI app with fully-featured async networking, logging, dependency injection, pull-to-refresh and mock-using tests.
-- [Gousto](Gousto,%20March%202023/README.md) - Simple async network request and embedded SwiftUI list-presenting view in a hosting controller.
+- [Gousto](Gousto,%20March%202023/README.md) - Simple async network request and embedded SwiftUI list-presenting view in a hosting controller. Expanded pairing exercise.
 - [Super Awesome](Super%20Awesome%2C%20August%202021/README.md) - Simple command-line anagram detection from input files
 - [You Need A Budget](You%20Need%20A%20Budget,%20March%202021/README.md) - Simple array diff
 - ⭐️ [Sky](Sky,%20August%202021/README.md) - Dependency injection framework with exemplar app
