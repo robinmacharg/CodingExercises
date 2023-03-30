@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "f4dcebd0-58f4-48b9-830a-ddf8c1c53ed6",
+		"name": "Pulselive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21330862"
+	},
+	"item": [
+		{
+			"name": "ContentList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dynamic.pulselive.com/test/native/contentList.json",
+					"protocol": "https",
+					"host": [
+						"dynamic",
+						"pulselive",
+						"com"
+					],
+					"path": [
+						"test",
+						"native",
+						"contentList.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Content Detail (id=32)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dynamic.pulselive.com/test/native/content/32.json",
+					"protocol": "https",
+					"host": [
+						"dynamic",
+						"pulselive",
+						"com"
+					],
+					"path": [
+						"test",
+						"native",
+						"content",
+						"32.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
