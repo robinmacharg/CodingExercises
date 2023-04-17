@@ -85,7 +85,7 @@ Development proceeded as follows:
   What's there works with the data provided.
 - Light/Dark mode support is there for the majority of the app; It's subjective (grey is often good enough) and there 
   may be omissions due to time constraints.  If you find them, please let me know!
-- I've skipped persistence completely - it wasn't on the spec. and appears outside the scope of theis exercise.
+- I've skipped persistence completely - it wasn't on the spec. and appears outside the scope of the exercise.
 - Project structure:
   - **Top-level** - App, main ContentView, assets.
   - **API** - Communication with the CoinGecko API
