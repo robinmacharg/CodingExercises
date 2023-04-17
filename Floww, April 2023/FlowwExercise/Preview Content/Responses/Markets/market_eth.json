@@ -1,0 +1,32 @@
+{
+    "id": "ethereum",
+    "symbol": "eth",
+    "name": "Ethereum",
+    "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+    "current_price": 1925.87,
+    "market_cap": 231673650432,
+    "market_cap_rank": 2,
+    "fully_diluted_valuation": 231673650432,
+    "total_volume": 11817631707,
+    "high_24h": 1922.4,
+    "low_24h": 1863.37,
+    "price_change_24h": 13.91,
+    "price_change_percentage_24h": 0.72735,
+    "market_cap_change_24h": 1695887611,
+    "market_cap_change_percentage_24h": 0.73741,
+    "circulating_supply": 120437016.342044,
+    "total_supply": 120437016.342044,
+    "max_supply": null,
+    "ath": 4878.26,
+    "ath_change_percentage": -60.59372,
+    "ath_date": "2021-11-10T14:24:19.604Z",
+    "atl": 0.432979,
+    "atl_change_percentage": 443880.29683,
+    "atl_date": "2015-10-20T00:00:00.000Z",
+    "roi": {
+        "times": 84.31438508878081,
+        "currency": "btc",
+        "percentage": 8431.438508878082
+    },
+    "last_updated": "2023-04-12T14:44:27.727Z"
+}

@@ -12,6 +12,7 @@
 		00AC5ACE29C857BC00D1977A /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ACD29C857BC00D1977A /* APIServiceError.swift */; };
 		00AC5AD029C8583900D1977A /* Data+Marketplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5ACF29C8583900D1977A /* Data+Marketplace.swift */; };
 		00AC5AD329C89C8800D1977A /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5AD229C89C8700D1977A /* ProductListView.swift */; };
+		00AC5B2129D2FDD300D1977A /* APIService+Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AC5B2029D2FDD300D1977A /* APIService+Endpoints.swift */; };
 		2EBF30DA27CFD28500E4264B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF30D927CFD28500E4264B /* AppDelegate.swift */; };
 		2EBF30DC27CFD28500E4264B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF30DB27CFD28500E4264B /* SceneDelegate.swift */; };
 		2EBF30DE27CFD28500E4264B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF30DD27CFD28500E4264B /* DashboardViewController.swift */; };
@@ -51,6 +52,7 @@
 		00AC5ACD29C857BC00D1977A /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 		00AC5ACF29C8583900D1977A /* Data+Marketplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Marketplace.swift"; sourceTree = "<group>"; };
 		00AC5AD229C89C8700D1977A /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		00AC5B2029D2FDD300D1977A /* APIService+Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+Endpoints.swift"; sourceTree = "<group>"; };
 		2EBF30D627CFD28500E4264B /* Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBF30D927CFD28500E4264B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EBF30DB27CFD28500E4264B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				00AC5AC729C854F500D1977A /* APIService.swift */,
 				00AC5ACD29C857BC00D1977A /* APIServiceError.swift */,
+				00AC5B2029D2FDD300D1977A /* APIService+Endpoints.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				00AC5AD029C8583900D1977A /* Data+Marketplace.swift in Sources */,
 				2EBF310F27D25E7500E4264B /* ResponsePayload.swift in Sources */,
 				00AC5ACE29C857BC00D1977A /* APIServiceError.swift in Sources */,
+				00AC5B2129D2FDD300D1977A /* APIService+Endpoints.swift in Sources */,
 				2EBF30DA27CFD28500E4264B /* AppDelegate.swift in Sources */,
 				2EBF30DC27CFD28500E4264B /* SceneDelegate.swift in Sources */,
 				2EBF312127D8EA4C00E4264B /* CowntdownContext.swift in Sources */,

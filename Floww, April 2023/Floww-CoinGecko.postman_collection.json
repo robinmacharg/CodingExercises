@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "88412624-47ab-4de2-86ca-3a1cf9af2b87",
+		"name": "Floww/CoinGecko",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21330862"
+	},
+	"item": [
+		{
+			"name": "coins/markets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coingecko",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"coins",
+						"markets"
+					],
+					"query": [
+						{
+							"key": "vs_currency",
+							"value": "usd"
+						},
+						{
+							"key": "order",
+							"value": "market_cap_desc"
+						},
+						{
+							"key": "per_page",
+							"value": "250"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "coins/{id}/market_chart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&Interval=daily",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coingecko",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"coins",
+						"bitcoin",
+						"market_chart"
+					],
+					"query": [
+						{
+							"key": "vs_currency",
+							"value": "usd"
+						},
+						{
+							"key": "days",
+							"value": "365"
+						},
+						{
+							"key": "Interval",
+							"value": "daily"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

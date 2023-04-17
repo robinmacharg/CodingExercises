@@ -1,0 +1,4 @@
+disabled_rules:
+    - opening_brace
+    - statement_position
+
