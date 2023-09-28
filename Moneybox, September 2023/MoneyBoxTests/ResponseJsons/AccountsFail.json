@@ -1,0 +1,5 @@
+{
+  "Name": "Bearer token missing",
+  "Message": "Sorry but it looks like you are not properly logged in. Please close the app and log in again.",
+  "ValidationErrors": []
+}

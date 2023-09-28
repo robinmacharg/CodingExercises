@@ -8,6 +8,7 @@ Each task has typically been submitted in its own repo.  For simplicity commit h
 
 ## Exercises
 
+- [Moneybox](Moneybox,%20September%202023/README.md) (09/2023) - A three-screen UKKit app with async network access, applying a hybrid MVVM/Redux pattern.
 - ⭐️ [Floww](Floww,%20April%202023/README.md) (04/2023) - A two-screen master/detail SwiftUI virtual currency (e.g. Bitcoin) app with Swift Charts, async networking, logging, pull-to-refresh, filtering and tests.
 - [Pulselive](Pulselive,%20March%202023/README.md) (03/2023) - A two-screen master/detail SwiftUI app with fully-featured async networking, logging, dependency injection, pull-to-refresh and mock-using tests.
 - [Gousto](Gousto,%20March%202023/README.md) (03/2023) - Simple async network request and embedded SwiftUI list-presenting view in a hosting controller. Expanded pairing exercise.

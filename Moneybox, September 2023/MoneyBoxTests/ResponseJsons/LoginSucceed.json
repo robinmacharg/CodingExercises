@@ -1,0 +1,10 @@
+{
+    "User": {
+        "Email": "test+ios@moneyboxapp.com",
+        "FirstName": "Michael",
+        "LastName": "Jordan"
+    },
+    "Session": {
+        "BearerToken": "GuQfJPpjUyJH10Og+hS9c0ttz4q2ZoOnEQBSBP2eAEs="
+    }
+}
