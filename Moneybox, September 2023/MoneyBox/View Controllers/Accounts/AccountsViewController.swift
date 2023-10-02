@@ -170,8 +170,7 @@ extension AccountsViewController: UITableViewDataSource {
                     id: id,
                     accountName: name,
                     planValue: planValue,
-                    moneybox: moneybox,
-                    delegate: self)
+                    moneybox: moneybox)
                 return cell
             }
             else {
@@ -184,15 +183,20 @@ extension AccountsViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - <AccountCellDelegate>
-
-extension AccountsViewController: AccountCellDelegate {
-    
-    /**
-     * Called by the cell when tapped
-     */
-    func tapped(segueInfo: SegueInfo) {
-        self.segueInfo = segueInfo
-        self.performSegue(withIdentifier: "accounts_details", sender: self)
+extension AccountsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let product = model.productResponses?[indexPath.row],
+           let planValue = product.planValue,
+           let moneybox = product.moneybox,
+           let name = product.product?.friendlyName,
+           let id = product.id
+        {
+            self.segueInfo = SegueInfo(
+                account: name,
+                planValue: planValue,
+                moneybox: moneybox,
+                id: id)
+            self.performSegue(withIdentifier: "accounts_details", sender: self)
+        }
     }
 }

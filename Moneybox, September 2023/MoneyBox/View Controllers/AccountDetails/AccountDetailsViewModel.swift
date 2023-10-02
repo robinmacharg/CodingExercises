@@ -57,22 +57,21 @@ class AccountDetailsViewModel: ObservableObject {
     func addMoney(_ amount: Int) {
         state = .sendingMoney
         
-        DispatchQueue.global(qos: .userInitiated).async {
-            if let id = self.id {
-                let paymentRequest = OneOffPaymentRequest(
-                    amount: amount,
-                    investorProductID: id)
-                self.dataProvider.addMoney(
-                    request: paymentRequest) { result in
-                        switch result {
-                        case .success(let response):
-                            self.moneybox = response.moneybox
-                            self.state = .sent
-                        case .failure(_):
-                            self.state = .error(.failedToAddMoney)
-                        }
+        if let id = self.id {
+            let paymentRequest = OneOffPaymentRequest(
+                amount: amount,
+                investorProductID: id)
+            self.dataProvider.addMoney(
+                request: paymentRequest) { [weak self] result in
+                    guard let self else { return }
+                    switch result {
+                    case .success(let response):
+                        self.moneybox = response.moneybox
+                        self.state = .sent
+                    case .failure(_):
+                        self.state = .error(.failedToAddMoney)
                     }
-            }
+                }
         }
     }
 }

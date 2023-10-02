@@ -23,7 +23,7 @@ final class AccountsViewModel: ObservableObject {
     var accounts: [Account]?
     var productResponses: [ProductResponse]?
     var totalPlanValue: Double?
-
+    
     // MARK: - Published properties
     
     @Published var state: State = .initial
@@ -46,19 +46,18 @@ final class AccountsViewModel: ObservableObject {
     
     func loadData() {
         state = .loading
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.dataProvider.fetchProducts { result in
-                switch result {
-                case .success(let response):
-                    self.productResponses = response.productResponses ?? []
-                    self.totalPlanValue = response.totalPlanValue ?? 0.0
-                    self.state = .loaded
-                    
-                case .failure(let error):
-                    self.productResponses = []
-                    self.totalPlanValue = 0.0
-                    self.state = .error(.accountRetrievalError(error.localizedDescription))
-                }
+        self.dataProvider.fetchProducts { [weak self] result in
+            guard let self else { return }
+            switch result {
+            case .success(let response):
+                self.productResponses = response.productResponses ?? []
+                self.totalPlanValue = response.totalPlanValue ?? 0.0
+                self.state = .loaded
+                
+            case .failure(let error):
+                self.productResponses = []
+                self.totalPlanValue = 0.0
+                self.state = .error(.accountRetrievalError(error.localizedDescription))
             }
         }
     }

@@ -36,8 +36,8 @@ final class LoginViewModel: ObservableObject {
     
     private func updateFieldsFilledIn() {
         let validCredentials = !(email?.isEmpty ?? true)
-            && (email?.isEmail() ?? false)
-            && !(password?.isEmpty ?? true)
+        && (email?.isEmail() ?? false)
+        && !(password?.isEmpty ?? true)
         state = .validCredentials(validCredentials)
     }
     
@@ -56,17 +56,16 @@ final class LoginViewModel: ObservableObject {
     func login() {
         if let email, let password {
             state = .loggingIn
-            DispatchQueue.global(qos: .userInitiated).async {
-                let loginRequest = LoginRequest(email: email, password: password)
-                self.dataProvider.login(request: loginRequest) { result in
-                    switch result {
-                    case .success(let response):
-                        SessionManager().setUserToken(response.session.bearerToken)
-                        self.user = response.user
-                        self.state = .loggedIn
-                    case .failure(_):
-                        self.state = .error(.loginFailed("Login Failed.  Please try again."))
-                    }
+            let loginRequest = LoginRequest(email: email, password: password)
+            self.dataProvider.login(request: loginRequest) { [weak self] result in
+                guard let self else { return }
+                switch result {
+                case .success(let response):
+                    SessionManager().setUserToken(response.session.bearerToken)
+                    self.user = response.user
+                    self.state = .loggedIn
+                case .failure(_):
+                    self.state = .error(.loginFailed("Login Failed.  Please try again."))
                 }
             }
         }

@@ -19,7 +19,6 @@ class AccountCell: UITableViewCell {
     // MARK: - Properties
     
     var id: Int?
-    var delegate: AccountCellDelegate?
     var accountName: String?
     var planValue: Double?
     var moneybox: Double?
@@ -28,8 +27,6 @@ class AccountCell: UITableViewCell {
     
     override func awakeFromNib() {
         layer.cornerRadius = 10
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AccountCell.didTapView(_:)))
-        containerView.addGestureRecognizer(tapGesture)
     }
     
     // MARK: - Methods
@@ -38,10 +35,8 @@ class AccountCell: UITableViewCell {
         id: Int,
         accountName: String,
         planValue: Double,
-        moneybox: Double,
-        delegate: AccountCellDelegate)
+        moneybox: Double)
     {
-        self.delegate = delegate
         self.id = id
         self.accountName = accountName
         self.planValue = planValue
@@ -50,16 +45,5 @@ class AccountCell: UITableViewCell {
         accountNameLabel.text = accountName
         planValueLabel.text = planValue.asCurrency()
         moneyboxAmountLabel.text = moneybox.asCurrency()
-    }
-    
-    @objc
-    func didTapView(_ sender: UITapGestureRecognizer) {
-        if let accountName, let planValue, let moneybox, let id {
-            delegate?.tapped(segueInfo: AccountsViewController.SegueInfo(
-                account: accountName,
-                planValue: planValue,
-                moneybox: moneybox,
-                id: id))
-        }
     }
 }

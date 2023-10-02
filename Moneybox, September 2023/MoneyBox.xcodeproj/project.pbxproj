@@ -11,7 +11,6 @@
 		000CFC452AC3412600D3A337 /* ModernEra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 000CFC432AC3412600D3A337 /* ModernEra-Bold.ttf */; };
 		000CFC472AC36B5100D3A337 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CFC462AC36B5100D3A337 /* AccountDetailsViewController.swift */; };
 		000CFC4A2AC36B7000D3A337 /* AccountDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CFC492AC36B7000D3A337 /* AccountDetailsViewModel.swift */; };
-		000CFC4C2AC37B2600D3A337 /* AccountCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CFC4B2AC37B2600D3A337 /* AccountCellDelegate.swift */; };
 		000CFC4E2AC413FF00D3A337 /* DataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CFC4D2AC413FF00D3A337 /* DataProviderMock.swift */; };
 		000CFC502AC4156100D3A337 /* TestLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000CFC4F2AC4156100D3A337 /* TestLoginViewModel.swift */; };
 		000CFC532AC42C2200D3A337 /* LoginFail.json in Resources */ = {isa = PBXBuildFile; fileRef = 000CFC512AC429C500D3A337 /* LoginFail.json */; };
@@ -52,11 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000CFC422AC3412500D3A337 /* ModernEra-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ModernEra-Regular.ttf"; path = "../../../../Downloads/ModernEra-Regular.ttf"; sourceTree = "<group>"; };
-		000CFC432AC3412600D3A337 /* ModernEra-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ModernEra-Bold.ttf"; path = "../../../../Downloads/ModernEra-Bold.ttf"; sourceTree = "<group>"; };
+		000CFC422AC3412500D3A337 /* ModernEra-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ModernEra-Regular.ttf"; path = "Fonts/ModernEra-Regular.ttf"; sourceTree = "<group>"; };
+		000CFC432AC3412600D3A337 /* ModernEra-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ModernEra-Bold.ttf"; path = "Fonts/ModernEra-Bold.ttf"; sourceTree = "<group>"; };
 		000CFC462AC36B5100D3A337 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		000CFC492AC36B7000D3A337 /* AccountDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewModel.swift; sourceTree = "<group>"; };
-		000CFC4B2AC37B2600D3A337 /* AccountCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellDelegate.swift; sourceTree = "<group>"; };
 		000CFC4D2AC413FF00D3A337 /* DataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderMock.swift; sourceTree = "<group>"; };
 		000CFC4F2AC4156100D3A337 /* TestLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoginViewModel.swift; sourceTree = "<group>"; };
 		000CFC512AC429C500D3A337 /* LoginFail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginFail.json; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 				00FFD9752AC2D12D00774445 /* AccountsViewController.swift */,
 				00FFD97E2AC2EEBA00774445 /* AccountsViewModel.swift */,
 				00FFD9802AC2F55800774445 /* AccountCell.swift */,
-				000CFC4B2AC37B2600D3A337 /* AccountCellDelegate.swift */,
 				000CFC5B2AC4339900D3A337 /* AccountsError.swift */,
 			);
 			path = Accounts;
@@ -384,7 +381,6 @@
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
 				000CFC612AC45E0F00D3A337 /* AccountDetailsError.swift in Sources */,
 				00FFD9812AC2F55800774445 /* AccountCell.swift in Sources */,
-				000CFC4C2AC37B2600D3A337 /* AccountCellDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
