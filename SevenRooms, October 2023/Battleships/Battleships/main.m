@@ -67,7 +67,8 @@ NSMutableArray<NSString *> * runGame(NSMutableArray<NSMutableArray<NSString *> *
             [copiedGrid replaceObjectAtIndex:row withObject:wholeRow];
             
             // Obviously not efficient - constructing an initial dict of ship cell counts
-            // and decrementing values would be better
+            // and decrementing values would be better.
+            // KVC discussed here: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html
             NSArray *flattenedGrid = [copiedGrid valueForKeyPath: @"@unionOfArrays.self"];
             
             // The grid still contains pieces of the ship, so it's not been sunk
